@@ -1,4 +1,10 @@
-stages:
+trigger:
+- master
+
+pool:
+  runs-on: self-hosted
+  
+  stages:
 - stage: Build
   jobs:
     - job: firstjob
